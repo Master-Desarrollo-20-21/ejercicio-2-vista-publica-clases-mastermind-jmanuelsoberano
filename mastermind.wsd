@@ -1,0 +1,65 @@
+@startuml Mastermind
+
+class Mastermind {
+    void start()
+    (static) void main()
+}
+
+
+Mastermind --> Player
+Mastermind --> Board
+
+Board ..> Console
+Player ..> Console
+Player ..> Board
+Board --> Result
+Result *..> Color
+Player *..> Color
+Result ..> Console
+
+Console ..> IO
+
+class Player {
+    void proposedCombination(Board board)
+}
+
+class Board {
+    void play()
+    void continue()
+}
+
+class Result {
+    void generateSecretCombination()
+    boolean validProposedCombination()
+    boolean isWinner()
+    boolean isLost()
+}
+
+class Console {
+    void writeTitle()
+    void writeAttempt()
+    void writeWrongProposedCombinationLength()
+    void writeWrongColor()
+    void writeWon()
+    void writeLost()
+    void writeContinue()
+    void writeResultValidProposedCombination()
+}
+
+class IO {
+    string read()
+    void write(string message)
+}
+
+enum Color {
+  Red
+  Blue
+  Yellow
+  Grren
+  Orange
+  Purple
+  Black
+  White
+}
+
+@enduml

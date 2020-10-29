@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="189px" preserveAspectRatio="none" style="width:281px;height:189px;" version="1.1" viewBox="0 0 281 189" width="281px" zoomAndPan="magnify"><defs><filter height="300%" id="f1tyllhqazo2p6" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--entity Player--><ellipse cx="26" cy="61" fill="#FEFECE" filter="url(#f1tyllhqazo2p6)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M26,69 L26,96 M13,77 L39,77 M26,96 L13,111 M26,96 L39,111 " fill="none" filter="url(#f1tyllhqazo2p6)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="40" x="6" y="132.5332">Player</text><ellipse cx="188.7132" cy="23.4517" fill="#FEFECE" filter="url(#f1tyllhqazo2p6)" rx="24.2132" ry="15.4517" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="30" x="173.7132" y="28.7564">Start</text><ellipse cx="188.3351" cy="93.367" fill="#FEFECE" filter="url(#f1tyllhqazo2p6)" rx="82.3351" ry="18.867" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="132" x="122.3351" y="98.6717">ProposeCombination</text><ellipse cx="188.2696" cy="163.4517" fill="#FEFECE" filter="url(#f1tyllhqazo2p6)" rx="39.7696" ry="15.4517" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="162.2696" y="168.7564">Resume</text><!--link Player to Start--><path d="M46.0264,84.241 C61.9478,76.577 85.3165,65.523 106,56.5 C124.893,48.258 146.53,39.529 162.76,33.121 " fill="none" id="Player-Start" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="167.614,31.209,157.7743,30.7843,162.9616,33.0408,160.7052,38.2281,167.614,31.209" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Player to ProposeCombination--><path d="M46.0417,93.5 C59.9737,93.5 79.9654,93.5 100.5491,93.5 " fill="none" id="Player-ProposeCombination" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="105.7917,93.5,96.7917,89.5,100.7917,93.5,96.7917,97.5,105.7917,93.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Player to Resume--><path d="M46.0787,102.4033 C62.0312,109.7973 85.4163,120.5193 106,129.5 C122.16,136.5505 140.247,144.1277 155.27,150.3356 " fill="none" id="Player-Resume" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="160.24,152.3857,153.446,145.2553,155.618,150.4786,150.3947,152.6505,160.24,152.3857" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+left to right direction
+
+actor Player
+usecase Start
+usecase ProposeCombination
+usecase Resume
+
+Player - -> Start
+Player - -> ProposeCombination
+Player - -> Resume
+
+@enduml
+
+PlantUML version 1.2019.05(Sat Apr 20 18:45:36 CEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_222-b10
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: windows-1252
+Language: es
+Country: ES
+--></g></svg>
